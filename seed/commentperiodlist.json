@@ -4,7 +4,7 @@
         "_application": "6406200",
         "code": "comment-period-1",
         "name": "Comment Period 1",
-        "startDate": "2018-01-03T00:00:00-08:00",
+        "startDate": "2018-03-01T00:00:00-08:00",
         "endDate": "2018-03-31T00:00:00-08:00",
         "description": "This is the comment period for Application # 6406200.",
         "internal": {
