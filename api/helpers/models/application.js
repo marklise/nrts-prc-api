@@ -26,7 +26,6 @@
     description      : { type:String, default: '' },
     tantalisID       : { type:Number, default: 0 },
     internalID       : { type:Number, default: 0 },
-    interestID       : { type:Number, default: 0 },
     isDeleted        : { type: Boolean, default: false },
     postID           : { type:Number, default: 0 },
     client           : { type:String, default: '' },
