@@ -95,22 +95,14 @@ definitions:
     #TODO: Fix enums
     enum: &applicationFields
       - name
-      - type
-      - subtype
-      - purpose
-      - subpurpose
       - _proponent
       - latitude
       - longitude
       - areaHectares
-      - location
       - region
       - description
       - legalDescription
-      - status
-      - tenureStage
       - publishDate
-      - businessUnit
       - cl_file
       - commodityType
       - commodity
