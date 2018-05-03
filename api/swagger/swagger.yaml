@@ -94,19 +94,18 @@ definitions:
     example: name|type
     #TODO: Fix enums
     enum: &applicationFields
-      - name
-      - _proponent
-      - latitude
-      - longitude
-      - areaHectares
-      - region
-      - description
-      - legalDescription
-      - publishDate
+      - agency
       - cl_file
-      - commodityType
-      - commodity
-      - commodities
+      - client
+      - description
+      - internal
+      - latitude
+      - legalDescription
+      - longitude
+      - name
+      - publishDate
+      - region
+      - tantalisID
 
 ### Search Definitions
   crownLandsId:
