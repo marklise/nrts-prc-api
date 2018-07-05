@@ -203,7 +203,6 @@ var getApplications = function (role, query, fields) {
                         'name',
                         'postID',
                         'publishDate',
-                        'region',
                         'tantalisID'], f) !== -1);
     });
     _.each(sanitizedFields, function (f) {

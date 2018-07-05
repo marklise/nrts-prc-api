@@ -99,12 +99,13 @@ definitions:
       - client
       - description
       - internal
+      - internalID
       - latitude
       - legalDescription
       - longitude
       - name
+      - postID
       - publishDate
-      - region
       - tantalisID
 
 ### Search Definitions
