@@ -1,5 +1,5 @@
  module.exports = require ('../models')('Application', {
-    _addedBy         : { type:'ObjectId', ref:'User', default:null },
+    _addedBy         : { type: String, default:null },
     _proponent       : { type:'ObjectId', ref:'Organization', default:null },
     code             : { type: String, trim: true, default: ''},
     name             : { type: String, trim: true },
