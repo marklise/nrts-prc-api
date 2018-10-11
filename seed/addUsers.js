@@ -80,7 +80,8 @@ var addUser = function (item) {
             displayName: item[2],
             firstName: item[3],
             lastName: item[4],
-            email: item[5]
+            email: item[5],
+	    roles: [['sysadmin'],['public']]
         };
         console.log("userObj:", userObj);
         request.post({
