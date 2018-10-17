@@ -32,6 +32,11 @@
     "yamljs": "0.2.9"
   },
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "test": "jest api",
+    "coverage": "jest --collectCoverageFrom=api/**.js --coverage api"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
   }
 }
