@@ -300,7 +300,7 @@ exports.protectedPost = function (args, res, next) {
   // Define security tag defaults
   app.tags = [['sysadmin']];
   app.internal.tags = [['sysadmin']];
-  app._addedBy = args.swagger.params.auth_payload.preferred_username.value;
+  app._addedBy = args.swagger.params.auth_payload.preferred_username;
   app.save()
   .then(function (savedApp) {
     // Get the shapes from BCGW for this DISPOSITION and save them into the feature collection
