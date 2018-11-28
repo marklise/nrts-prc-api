@@ -42,6 +42,10 @@ exports.publicHead = function (args, res, next) {
   // Build match query if on appId route
   var query   = {};
 
+  // Add in the default fields to the projection so that the incoming query will work for any selected fields.
+  tagList.push('_id');
+  tagList.push('tags');
+
   if (args.swagger.params.appId) {
     query = Utils.buildQuery("_id", args.swagger.params.appId.value, query);
   } else {
@@ -58,8 +62,7 @@ exports.publicHead = function (args, res, next) {
     Utils.runDataQuery('Application',
                       ['public'],
                       query,
-                      ['_id',
-                        'tags'], // Fields
+                      tagList, // Fields
                       null, // sort warmup
                       null, // sort
                       null, // skip
@@ -175,6 +178,11 @@ exports.protectedHead = function (args, res, next) {
 
   // Build match query if on appId route
   var query = {};
+
+  // Add in the default fields to the projection so that the incoming query will work for any selected fields.
+  tagList.push('_id');
+  tagList.push('tags');
+
   if (args.swagger.params.appId) {
     query = Utils.buildQuery("_id", args.swagger.params.appId.value, query);
   } else {
@@ -195,8 +203,7 @@ exports.protectedHead = function (args, res, next) {
   Utils.runDataQuery('Application',
                     args.swagger.operation["x-security-scopes"],
                     query,
-                    ['_id',
-                      'tags'], // Fields
+                    tagList, // Fields
                     null, // sort warmup
                     null, // sort
                     null, // skip
